@@ -1,3 +1,9 @@
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+ }
  .topnav {
     background-color: aliceblue;
     overflow: hidden;
@@ -23,6 +29,17 @@
     color: rgb(245, 194, 194);
     text-align: center;
  }
+
+ main{
+    padding: 16px;
+ }
+
+ section{
+    margin-bottom: 14px;
+    padding: 10px;
+    border: 1px solid #ccc;
+ }
+/*Responsive adjustments*/
 
  h1, h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,13 +71,14 @@ h2{
     font-size: 1.5rem;
     letter-spacing: -0.5px;
 }
-
+/* Responsive adjustments for screens with max width of 600px*/
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 200;
     text-align: center;
 }
+
 .flex-container{
     display: flex;
     justify-content: flex-start;
@@ -195,4 +213,3 @@ margin: 0 15px;
 color: black;
 text-decoration: none;
 }
-
