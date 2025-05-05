@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+        <h1>Derma Glow Skincare</h1>
+        <nav>
+            <!--This is my navigation bar-->
+            <div class="topnav">
+                <a class="active"
+                href="#home.html">Home</a>
+                <a href="#aboutus.html">About Us</a>
+                <a href="#products.html">Products catalogue</a>
+                <a href="#contactus.html">Contact Us</a>
+                <a href="#social.html">Get in touch</a>
+                <a href="#checkout.html">Checkout</a>
+            </div>
+        </nav>
+    
+          <!--This is my hompage-->
+    <main>
+        <section id="home.html">
+            <h1>Home</h1>
+            <p>Welcome to Derma Glow Skincare! Nourishing your skin one product at a time.</p>
+            <img src="Images/DermaGlow Home.png" atl="Hompage" width="1000" height="300">
+            <div class="signup-form">
+                <h2>Sign Up</h2>
+                <form action="/submit-signup" method="POST">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="/submit-login" method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </form>
+            </div>
+             <!--This is my About Us page--> 
+        </section>
+        <section id="aboutus.html">
+            <h1>About Us</h1>
+            <p>Derma Glow,founded in the year 2024,is a small online store that sells organic skincare products and plans to provide smart skincare services
+                online. Our product is a sustainability focused product made with 97% synthetic free ingredients. The main ingredients used in the  manufacturing
+                of the products include,the African Shea Tree Butter,Aloe Vera,essential oils,vitamins and many more. Derma Glow's aim in the self-care and beauty
+                space is to cater to all skin types by providing healthy and quality products and giving consumers a personal and healthy well-being experience.
+                Our vision as a brand is to fuel people's desire for self-care and personal expression through personalized skincare routines, paired with our affordable
+                luxury products,whilst putting sustainability at the forefront.
+                <img src="Images/African Botanics.png" alt="Information" width="900" height="300">
+            </p>
+            <!--This is my product catalogue-->
+        </section>
+        <section id="products.html">
+            <h1>Products</h1>
+            <p>Discover our luxurious products at unbeatable prices</p>
+            <div class="product" data-name="Product 1" data-price="180.00">
+                <h2>Rose Water Jelly Cleanser</h2>
+                <div class="flex-container">
+                <img src="Images/DermaGlow Cleanser.png" alt="cleanser" width="300" height="200">
+                <p>Price: R180.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+
+            </div>
+              <div class="product" data-name="Product 2" data-price="200.00">
+                    <h2>Vitamin C Brightening Serum</h2>
+                    <div class="flex-container">
+                    <img src="Images/DermaGlow serum.png" alt="serum" width="300" height="200">
+                    <p>Price: R200.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                
+            </div>
+            <div class="product" data-name="Product 3" data-price="200.00">
+                <h2>Shea Nourishing Moisturiser</h2>
+                <div class="flex-container">
+                <img src="Images/DermaGlow Moist.png" alt="Moisturiser" width="300" height="200">
+                <p>Price: R200.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Product 4" data-price="160.00">
+                <h2>SPF50 Skin Tint </h2>
+                <div class="flex-container">
+                <img src="Images/DermaGlow SkinTint.png" alt="skinTint" width="300" height="200">
+                <p>Price: R160.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <!--This is my checkout box-->
+        <div class="container">
+            <h1>Checkout</h1>
+    
+            <form id="checkout.html">
+                <h2>Billing Information</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <h2>Shipping Information</h2>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="province">Province</label>
+                <input type="text" id="state" name="state" required>
+    
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" name="zip" required>
+    
+                <h2>Payment Information</h2>
+                <label for="cardNumber">Card Number</label>
+                <input type="number" id="cardNumber" name="cardNumber" required>
+    
+                <label for="expiry">Expiry Date (MM/YY)</label>
+                <input type="text" id="expiry" name="expiry" required>
+    
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" required>
+    
+                <div class="total">
+                    Total: <span id="totalAmount">R740.00</span>
+                </div>
+    
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    
+           <!--This is my contact page-->
+        <section id="contactus.html">
+            <h1>Contact Us</h1>
+             
+            <form id="contact-form" onsubmit="handleSubmit">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send message</button>
+    </form>
+    <!--This is my social media page-->
+        </section id="social.html">
+        <h1>Get in touch</h1>
+        <p>Follow us on our social media platforms:</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/your instagram">Instagram</a>
+            <a href="https:/wa.me/your whatsappnumber">Whatsapp</a>
+            </div>
+            <!--This is my footer-->
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2025 DermaGlow Organic Skincare. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="#aboutus.html">About Us</a></li>
+                        <li><a href="#products.html">products</a></li>
+                        <li><a href="#contactus.html">Contact</a></li>
+                        <li><a href="#privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </footer>
+            
+
+</body>
+</html>
